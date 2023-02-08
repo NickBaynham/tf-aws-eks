@@ -33,6 +33,5 @@ variable "subnet_1_cidr" {
 variable "region" {
   type        = string
   description = "The target region for the EKS deployment"
-  default     = "us-east-2"
 }
 

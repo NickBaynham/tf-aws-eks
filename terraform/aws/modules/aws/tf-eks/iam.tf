@@ -17,7 +17,7 @@ resource "aws_iam_role" "eks-iam-role" {
 EOF
 }
 
-resource "aws_iam_role" "workernodes" {
+resource "aws_iam_role" "worker_nodes" {
   name = "eks-node-group-example"
 
   assume_role_policy = jsonencode({

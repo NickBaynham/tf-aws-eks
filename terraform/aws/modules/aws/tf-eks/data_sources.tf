@@ -17,4 +17,3 @@ data "aws_subnet" "eks_subnet_2" {
     values = ["subnet-2"]
   }
 }
-

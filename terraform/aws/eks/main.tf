@@ -1,7 +1,13 @@
+module "aws" {
+  source                 = "../modules/aws/tf-aws"
+  target_region          = var.region
+  shared_credentials_file = var.shared_credentials_file
+}
+
 module "tf-eks" {
   source                  = "../modules/aws/tf-eks"
-  shared_credentials_file = var.shared_credentials_file
+  target_region          = var.region
   cluster_name            = var.cluster_name
-  instance_type           = var.instance_type
   cluster_version         = var.cluster_version
+  instance_type           = var.instance_type
 }
