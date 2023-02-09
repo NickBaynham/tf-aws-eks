@@ -35,3 +35,8 @@ variable "region" {
   description = "The target region for the EKS deployment"
 }
 
+variable "kube_config" {
+  type         = string
+  description  = "The local path to the kube configuration"
+}
+
