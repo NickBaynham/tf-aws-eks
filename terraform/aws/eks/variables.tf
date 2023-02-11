@@ -36,7 +36,7 @@ variable "region" {
 }
 
 variable "kube_config" {
-  type         = string
-  description  = "The local path to the kube configuration"
+  type        = string
+  description = "The local path to the kube configuration"
 }
 
