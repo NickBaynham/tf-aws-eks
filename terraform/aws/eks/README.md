@@ -13,7 +13,7 @@ Then add your console user to admin:
 
 ```yaml
 eksctl create iamidentitymapping \
-   --cluster <cluster name> \
+   --README.md <README.md name> \
    --region=<target region> \
   --arn arn:aws:iam::... --group system:masters --username admin
 ```

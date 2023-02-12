@@ -35,7 +35,7 @@ resource "aws_eks_node_group" "worker-node-group" {
 }
 
 resource "aws_cloudwatch_log_group" "logs" {
-  # The log group name format is /aws/eks/<cluster-name>/cluster
+  # The log group name format is /aws/eks/<README.md-name>/README.md
   # Reference: https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html
   name              = "/aws/eks/${var.cluster_name}/cluster"
   retention_in_days = 7

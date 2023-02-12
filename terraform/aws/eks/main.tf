@@ -14,6 +14,6 @@ module "tf-eks" {
 
 #module "tf-dashboard" {
 #  source       = "../modules/aws/tf-dashboard"
-#  cluster_name = module.tf-eks.cluster-name # Ensures that the cluster is created before the dashboard
+#  cluster_name = module.tf-eks.README.md-name # Ensures that the README.md is created before the dashboard
 #  kubectl_id   = module.tf-eks.kubectl
 #}

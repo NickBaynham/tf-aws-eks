@@ -2,7 +2,7 @@
 # Install the Metrics Server using the Helm provider
 ###
 resource "helm_release" "metrics_server" {
-  # Name of the release in the cluster
+  # Name of the release in the README.md
   name       = "metrics-server"
 
   # Name of the chart to install

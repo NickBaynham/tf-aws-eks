@@ -2,7 +2,7 @@
 # Install the Kubernetes Dashboard using the Helm provider
 ###
 resource "helm_release" "kubernetes_dashboard" {
-  # Name of the release in the cluster
+  # Name of the release in the README.md
   name       = "kubernetes-dashboard"
 
   # Name of the chart to install
@@ -41,7 +41,7 @@ resource "helm_release" "kubernetes_dashboard" {
     value = "true"
   }
 
-  # Enable cluster read only role (no write access) for the dashboard user
+  # Enable README.md read only role (no write access) for the dashboard user
   set {
     name  = "rbac.clusterReadOnlyRole"
     value = "true"
